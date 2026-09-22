@@ -1,1 +1,424 @@
-/* ================================ VERDELOGICO Stile principale ================================ */ * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; background: #f4f1e8; color: #20352b; font-family: Arial, Helvetica, sans-serif; line-height: 1.7; } /* ================================ MENU ================================ */ nav { position: sticky; top: 0; z-index: 1000; display: flex; justify-content: center; align-items: center; gap: 35px; padding: 20px 30px; background: rgba(244, 241, 232, 0.96); border-bottom: 1px solid rgba(32, 53, 43, 0.12); } nav a { color: #20352b; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; transition: opacity 0.25s ease; } nav a:hover { opacity: 0.55; } /* ================================ HOME ================================ */ header { min-height: 82vh; display: flex; flex-direction: column; justify-content: center; padding: 90px 10%; background: linear-gradient( rgba(25, 48, 38, 0.72), rgba(25, 48, 38, 0.72) ), url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1800&q=85"); background-size: cover; background-position: center; color: white; } header p:first-child { margin-bottom: 25px; font-size: 14px; font-weight: bold; letter-spacing: 0.3em; } header h1 { max-width: 900px; margin: 0 0 30px; font-size: clamp(60px, 9vw, 125px); line-height: 0.95; font-weight: 400; letter-spacing: -0.04em; } header p:last-child { max-width: 650px; margin: 0; font-size: 20px; line-height: 1.7; } /* ================================ SEZIONI GENERALI ================================ */ section { max-width: 1200px; margin: 0 auto; padding: 130px 8%; } section > p:first-child { margin-bottom: 20px; color: #718b72; font-size: 13px; font-weight: bold; letter-spacing: 0.25em; } section h2 { margin: 0 0 45px; color: #20352b; font-size: clamp(42px, 6vw, 78px); line-height: 1.05; font-weight: 400; letter-spacing: -0.035em; } section h3 { color: #20352b; } /* ================================ CHI SIAMO ================================ */ #chi-siamo { max-width: 1050px; } #chi-siamo > p:not(:first-child) { max-width: 850px; margin-bottom: 28px; font-size: 18px; } #chi-siamo h3 { max-width: 700px; margin-top: 60px; font-size: 28px; line-height: 1.3; font-weight: 400; } /* ================================ INTRO ================================ */ .intro { max-width: 1200px; padding-top: 90px; padding-bottom: 110px; background: #20352b; color: #f4f1e8; } .intro > p { max-width: 800px; margin-bottom: 30px; font-size: 19px; } .intro h2 { margin: 8px 0; color: #f4f1e8; font-size: clamp(45px, 6vw, 82px); } /* ================================ SIEPEPRONTA ================================ */ #siepepronta { max-width: 1200px; background: linear-gradient( rgba(32, 53, 43, 0.86), rgba(32, 53, 43, 0.86) ), url("https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1800&q=85"); background-size: cover; background-position: center; color: white; } #siepepronta > p:first-child { color: #c4d3bc; } #siepepronta h2 { color: white; font-size: clamp(55px, 8vw, 105px); } #siepepronta .siepe-intro { max-width: 700px; font-size: 23px; } .siepe-highlight { margin: 60px 0; padding: 35px 0; border-top: 1px solid rgba(255,255,255,0.35); border-bottom: 1px solid rgba(255,255,255,0.35); } .siepe-highlight div { display: flex; flex-wrap: wrap; gap: 30px; font-size: 28px; } .siepe-highlight span { opacity: 0.65; } #siepepronta > p:last-child { max-width: 750px; font-size: 18px; } /* ================================ LAVORI ================================ */ #lavori { background: #ebe6d9; } #lavori > p:last-child { max-width: 750px; font-size: 19px; } /* ================================ RECENSIONI ================================ */ #recensioni { max-width: 1200px; } .reviews { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; } .review { padding: 40px; background: white; border: 1px solid rgba(32, 53, 43, 0.10); border-radius: 18px; } .review p { margin-top: 0; font-size: 17px; line-height: 1.75; } .review span { color: #718b72; font-weight: bold; } /* ================================ FAQ ================================ */ #domande { max-width: 1050px; } .faq { border-top: 1px solid rgba(32, 53, 43, 0.18); } .faq-item { padding: 30px 0; border-bottom: 1px solid rgba(32, 53, 43, 0.18); } .faq-item h3 { margin: 0 0 15px; font-size: 21px; font-weight: 600; } .faq-item p { max-width: 800px; margin: 0; font-size: 17px; } /* ================================ CONTATTI ================================ */ #contatti { max-width: 1200px; background: #20352b; color: #f4f1e8; } #contatti h2 { color: #f4f1e8; } #contatti p { font-size: 18px; } #contatti a { color: #f4f1e8; font-size: 22px; text-decoration: none; } #contatti a:hover { text-decoration: underline; } /* ================================ FOOTER ================================ */ footer { padding: 45px 8%; background: #17271f; color: #c4d0c7; display: flex; justify-content: space-between; gap: 30px; font-size: 13px; } /* ================================ MOBILE ================================ */ @media (max-width: 800px) { nav { justify-content: flex-start; gap: 18px; padding: 16px 18px; overflow-x: auto; white-space: nowrap; } nav a { font-size: 11px; } header { min-height: 75vh; padding: 70px 8%; } header h1 { font-size: clamp(55px, 16vw, 90px); } header p:last-child { font-size: 17px; } section { padding: 90px 7%; } section h2 { font-size: clamp(42px, 12vw, 65px); } .reviews { grid-template-columns: 1fr; } .review { padding: 30px; } .siepe-highlight div { flex-direction: column; gap: 8px; font-size: 25px; } footer { flex-direction: column; } }
+/* =========================
+   VERDELOGICO
+   STILE EDITORIALE NATURALE
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f3f0e8;
+    color: #26352d;
+    font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* =========================
+   MENU
+   ========================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    padding: 20px 30px;
+
+    background: rgba(243, 240, 232, 0.94);
+    border-bottom: 1px solid rgba(38, 53, 45, 0.12);
+
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: #26352d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.55;
+}
+
+/* =========================
+   TITOLI
+   ========================= */
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: clamp(70px, 10vw, 150px);
+    margin: 20px 0 35px;
+}
+
+h2 {
+    font-size: clamp(48px, 6vw, 90px);
+    margin: 20px 0 40px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* =========================
+   HOME
+   ========================= */
+
+header {
+    min-height: 88vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 80px 8vw;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(25, 45, 35, 0.35),
+            rgba(25, 45, 35, 0.58)
+        ),
+        url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2000&q=85")
+        center / cover no-repeat;
+}
+
+header p:first-child {
+    margin: 0;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+}
+
+header p:last-child {
+    max-width: 680px;
+    margin: 0;
+
+    font-size: 18px;
+}
+
+/* =========================
+   SEZIONI
+   ========================= */
+
+section {
+    padding: 120px 8vw;
+}
+
+section > p:first-child {
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    opacity: 0.6;
+}
+
+/* =========================
+   CHI SIAMO
+   ========================= */
+
+#chi-siamo {
+    max-width: 1050px;
+}
+
+#chi-siamo h2 {
+    max-width: 850px;
+}
+
+#chi-siamo p {
+    max-width: 800px;
+    font-size: 18px;
+}
+
+#chi-siamo h3 {
+    max-width: 700px;
+    margin-top: 70px;
+    font-size: clamp(34px, 4vw, 55px);
+}
+
+/* =========================
+   INTRO
+   ========================= */
+
+.intro {
+    background: #26352d;
+    color: #f3f0e8;
+
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.intro p {
+    max-width: 800px;
+    font-size: 20px;
+}
+
+.intro h2 {
+    margin: 8px 0;
+}
+
+/* =========================
+   SIEPEPRONTA
+   ========================= */
+
+#siepepronta {
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(28, 48, 37, 0.45),
+            rgba(28, 48, 37, 0.68)
+        ),
+        url("https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=2000&q=85")
+        center / cover no-repeat;
+}
+
+#siepepronta h2 {
+    font-size: clamp(65px, 9vw, 130px);
+    margin-bottom: 30px;
+}
+
+.siepe-intro {
+    max-width: 700px;
+    font-size: 23px;
+}
+
+.siepe-highlight {
+    margin: 60px 0;
+}
+
+.siepe-highlight div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: baseline;
+}
+
+.siepe-highlight strong {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(42px, 6vw, 80px);
+    font-weight: 500;
+}
+
+.siepe-highlight span {
+    font-size: 18px;
+}
+
+#siepepronta > p:last-child {
+    max-width: 700px;
+    font-size: 18px;
+}
+
+/* =========================
+   LAVORI
+   ========================= */
+
+#lavori {
+    background: #e7e1d4;
+}
+
+#lavori p:last-child {
+    max-width: 700px;
+    font-size: 19px;
+}
+
+/* =========================
+   RECENSIONI
+   ========================= */
+
+#recensioni {
+    background: #f3f0e8;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    margin-top: 70px;
+}
+
+.review {
+    padding: 45px;
+
+    background: white;
+
+    border: 1px solid rgba(38, 53, 45, 0.1);
+    border-radius: 4px;
+}
+
+.review p {
+    margin-top: 0;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 25px;
+    line-height: 1.25;
+}
+
+.review span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+/* =========================
+   DOMANDE
+   ========================= */
+
+#domande {
+    background: #e7e1d4;
+}
+
+.faq {
+    max-width: 900px;
+    margin-top: 60px;
+}
+
+.faq-item {
+    padding: 30px 0;
+
+    border-top: 1px solid rgba(38, 53, 45, 0.25);
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid rgba(38, 53, 45, 0.25);
+}
+
+.faq-item h3 {
+    margin: 0 0 15px;
+
+    font-size: 27px;
+}
+
+.faq-item p {
+    max-width: 800px;
+    margin: 0;
+}
+
+/* =========================
+   CONTATTI
+   ========================= */
+
+#contatti {
+    background: #26352d;
+    color: #f3f0e8;
+}
+
+#contatti a {
+    color: #f3f0e8;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 32px;
+
+    text-decoration: none;
+}
+
+#contatti a:hover {
+    opacity: 0.65;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 30px 8vw;
+
+    background: #1c2922;
+    color: #f3f0e8;
+
+    font-size: 13px;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        justify-content: flex-start;
+        gap: 18px;
+
+        padding: 16px 20px;
+
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    header {
+        min-height: 78vh;
+        padding: 50px 25px;
+    }
+
+    h1 {
+        font-size: clamp(60px, 18vw, 95px);
+    }
+
+    h2 {
+        font-size: clamp(45px, 13vw, 70px);
+    }
+
+    section {
+        padding: 80px 25px;
+    }
+
+    header p:last-child,
+    #chi-siamo p,
+    .intro p,
+    #lavori p:last-child,
+    #siepepronta > p:last-child {
+        font-size: 16px;
+    }
+
+    .siepe-intro {
+        font-size: 20px;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr;
+    }
+
+    .review {
+        padding: 30px;
+    }
+
+    .review p {
+        font-size: 22px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

@@ -109,3 +109,85 @@ section p {
         font-size: 38px;
     }
 }
+/* SERVIZI */
+
+#servizi {
+    padding-top: 140px;
+}
+
+.section-intro {
+    max-width: 800px;
+    margin-bottom: 70px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-intro h2 {
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 30px;
+}
+
+.section-intro .intro {
+    font-size: 22px;
+    max-width: 650px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: #d8d5cc;
+    border: 1px solid #d8d5cc;
+}
+
+.service {
+    background: #f7f5f0;
+    padding: 45px;
+    min-height: 280px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service:hover {
+    background: #ebe8df;
+    transform: translateY(-4px);
+}
+
+.service-icon {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.service h3 {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+}
+
+@media (max-width: 700px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        padding: 35px 25px;
+    }
+
+    .section-intro h2 {
+        letter-spacing: -2px;
+    }
+}

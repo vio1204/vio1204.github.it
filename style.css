@@ -772,3 +772,117 @@ header {
         font-size: 17px;
     }
 }
+/* =========================
+   PAGINA SERVIZI
+   ========================= */
+
+.services-header {
+    min-height: 75vh;
+    max-width: 1250px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 100px 40px;
+}
+
+.services-header h1 {
+    font-size: clamp(70px, 12vw, 150px);
+    line-height: 0.9;
+    letter-spacing: -6px;
+    font-weight: 500;
+
+    margin: 30px 0 60px;
+}
+
+.services-header p:last-child {
+    max-width: 700px;
+    font-size: 23px;
+}
+
+
+.services-end {
+    background: #1d2a20;
+    color: #f4f1e9;
+
+    max-width: none;
+
+    padding-left: max(40px, calc((100vw - 1250px) / 2));
+    padding-right: max(40px, calc((100vw - 1250px) / 2));
+
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-end h2 {
+    margin-bottom: 35px;
+}
+
+.services-end p {
+    font-size: 21px;
+}
+
+.contact-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 25px;
+
+    padding: 15px 25px;
+
+    border: 1px solid #f4f1e9;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #f4f1e9;
+    color: #1d2a20;
+}
+
+
+@media (max-width: 800px) {
+
+    .services-header {
+        padding: 80px 25px;
+    }
+
+    .services-header h1 {
+        letter-spacing: -4px;
+    }
+
+    .services-end {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .services-header {
+        padding: 70px 20px;
+    }
+
+    .services-header h1 {
+        font-size: 70px;
+    }
+
+    .services-header p:last-child {
+        font-size: 18px;
+    }
+
+    .services-end {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}

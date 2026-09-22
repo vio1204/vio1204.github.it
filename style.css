@@ -1,193 +1,511 @@
+/* =========================
+   VERDELOGICO
+   STILE DEL SITO
+   ========================= */
+
+
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* BASE */
+
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #222;
-    background: #f7f5f0;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1e9;
+    color: #1d2a20;
+    line-height: 1.7;
 }
 
-/* HEADER */
-
-header {
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
+a {
+    color: inherit;
 }
 
-header h1 {
-    font-size: clamp(50px, 10vw, 110px);
-    font-weight: 600;
-    letter-spacing: -4px;
-}
 
-header p {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-/* MENU */
+/* =========================
+   MENU
+   ========================= */
 
 nav {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 35px;
 
-    padding: 20px;
+    padding: 20px 30px;
 
-    background: rgba(247, 245, 240, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(244, 241, 233, 0.94);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(29, 42, 32, 0.08);
 }
 
 nav a {
-    color: #222;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: opacity 0.3s ease;
 }
 
 nav a:hover {
-    opacity: 0.5;
+    opacity: 0.45;
 }
 
-/* CONTENUTO */
 
-main {
-    max-width: 1100px;
+/* =========================
+   HOME
+   ========================= */
+
+header {
+    min-height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 1250px;
     margin: auto;
-    padding: 0 25px;
+
+    padding: 100px 40px;
 }
 
-section {
-    min-height: 60vh;
-    padding: 120px 0;
+header p:first-child {
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
 }
 
-section h2 {
-    font-size: 48px;
-    margin-bottom: 30px;
-    letter-spacing: -2px;
-}
+header h1 {
+    font-size: clamp(70px, 12vw, 170px);
+    line-height: 0.9;
+    letter-spacing: -7px;
+    font-weight: 500;
 
-section p {
-    max-width: 650px;
-    font-size: 19px;
-}
+    max-width: 1000px;
 
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    nav {
-        gap: 18px;
-    }
-
-    nav a {
-        font-size: 13px;
-    }
-
-    section {
-        padding: 80px 0;
-    }
-
-    section h2 {
-        font-size: 38px;
-    }
-}
-/* SERVIZI */
-
-#servizi {
-    padding-top: 140px;
-}
-
-.section-intro {
-    max-width: 800px;
     margin-bottom: 70px;
 }
 
-.eyebrow {
-    font-size: 13px;
-    letter-spacing: 3px;
-    font-weight: 600;
-    margin-bottom: 20px;
+header p:last-child {
+    max-width: 720px;
+    font-size: 21px;
+    line-height: 1.7;
 }
 
-.section-intro h2 {
-    font-size: clamp(42px, 7vw, 78px);
-    line-height: 1;
-    letter-spacing: -3px;
+
+/* =========================
+   CONTENUTO GENERALE
+   ========================= */
+
+main {
+    width: 100%;
+}
+
+section {
+    max-width: 1250px;
+    margin: auto;
+
+    padding: 150px 40px;
+}
+
+section > p:first-child {
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    margin-bottom: 35px;
+    opacity: 0.65;
+}
+
+section h2 {
+    font-size: clamp(48px, 7vw, 90px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+    font-weight: 500;
+
+    margin-bottom: 60px;
+}
+
+section p {
+    max-width: 780px;
+    font-size: 19px;
     margin-bottom: 30px;
 }
 
-.section-intro .intro {
-    font-size: 22px;
-    max-width: 650px;
+strong {
+    font-weight: 600;
 }
+
+
+/* =========================
+   CHI SIAMO
+   ========================= */
+
+#chi-siamo {
+    background: #e7e9df;
+
+    max-width: none;
+    padding-left: max(40px, calc((100vw - 1250px) / 2));
+    padding-right: max(40px, calc((100vw - 1250px) / 2));
+}
+
+#chi-siamo h2 {
+    max-width: 900px;
+}
+
+#chi-siamo h3 {
+    max-width: 800px;
+
+    font-size: clamp(32px, 5vw, 65px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+
+    font-weight: 500;
+
+    margin-top: 70px;
+}
+
+
+/* =========================
+   INTRO
+   ========================= */
+
+.intro {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #1d2a20;
+    color: #f4f1e9;
+
+    max-width: none;
+
+    padding-left: max(40px, calc((100vw - 1250px) / 2));
+    padding-right: max(40px, calc((100vw - 1250px) / 2));
+}
+
+.intro p {
+    max-width: 900px;
+    font-size: 22px;
+}
+
+.intro h2 {
+    font-size: clamp(50px, 8vw, 110px);
+    margin: 35px 0 0;
+    letter-spacing: -5px;
+}
+
+
+/* =========================
+   SERVIZI
+   ========================= */
+
+#servizi {
+    background: #f4f1e9;
+}
+
+.section-intro {
+    max-width: 700px;
+    font-size: 22px;
+    margin-bottom: 80px;
+}
+
 
 .services-grid {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: 1px;
-    background: #d8d5cc;
-    border: 1px solid #d8d5cc;
+
+    background: rgba(29, 42, 32, 0.15);
+
+    border: 1px solid rgba(29, 42, 32, 0.15);
 }
 
+
 .service {
-    background: #f7f5f0;
-    padding: 45px;
+    background: #f4f1e9;
+
+    padding: 50px 40px;
+
     min-height: 280px;
-    transition: transform 0.3s ease, background 0.3s ease;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
 }
 
 .service:hover {
-    background: #ebe8df;
-    transform: translateY(-4px);
-}
-
-.service-icon {
-    display: block;
-    font-size: 30px;
-    margin-bottom: 25px;
+    background: #e7e9df;
 }
 
 .service h3 {
     font-size: 25px;
     line-height: 1.2;
-    margin-bottom: 18px;
+
+    margin-bottom: 25px;
+
+    font-weight: 500;
 }
 
 .service p {
-    font-size: 16px;
-    color: #555;
-    max-width: 600px;
+    font-size: 17px;
+    margin-bottom: 0;
 }
 
-@media (max-width: 700px) {
+
+/* =========================
+   LAVORI
+   ========================= */
+
+#lavori {
+    min-height: 80vh;
+
+    background: #d9dfd2;
+
+    max-width: none;
+
+    padding-left: max(40px, calc((100vw - 1250px) / 2));
+    padding-right: max(40px, calc((100vw - 1250px) / 2));
+}
+
+#lavori h2 {
+    max-width: 900px;
+}
+
+#lavori p:last-child {
+    font-size: 21px;
+}
+
+
+/* =========================
+   CONTATTI
+   ========================= */
+
+#contatti {
+    min-height: 80vh;
+
+    background: #f4f1e9;
+}
+
+#contatti h2 {
+    margin-bottom: 80px;
+}
+
+#contatti p {
+    margin-bottom: 10px;
+}
+
+#contatti a {
+    font-size: 25px;
+    text-decoration: none;
+
+    border-bottom: 1px solid #1d2a20;
+
+    transition: opacity 0.3s ease;
+}
+
+#contatti a:hover {
+    opacity: 0.45;
+}
+
+#contatti p:nth-of-type(2) {
+    margin-bottom: 55px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background: #1d2a20;
+    color: #f4f1e9;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 30px 40px;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   ANIMAZIONE SCORRIMENTO
+   ========================= */
+
+section,
+header {
+    animation: comparsa 0.8s ease both;
+}
+
+@keyframes comparsa {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        gap: 18px;
+        padding: 16px 15px;
+    }
+
+    nav a {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    header {
+        padding: 80px 25px;
+    }
+
+    header h1 {
+        font-size: clamp(65px, 17vw, 120px);
+        letter-spacing: -5px;
+    }
+
+    header p:last-child {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 110px 25px;
+    }
+
+    section h2 {
+        letter-spacing: -3px;
+    }
+
+    #chi-siamo,
+    .intro,
+    #lavori {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
     .services-grid {
         grid-template-columns: 1fr;
     }
 
-    .service {
-        padding: 35px 25px;
+    footer {
+        flex-direction: column;
+        padding: 30px 25px;
+    }
+}
+
+
+/* =========================
+   TELEFONO
+   ========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+
+        gap: 22px;
     }
 
-    .section-intro h2 {
+    header {
+        min-height: 85vh;
+        padding: 70px 20px;
+    }
+
+    header h1 {
+        font-size: 68px;
+        letter-spacing: -4px;
+        margin-bottom: 50px;
+    }
+
+    header p:last-child {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 90px 20px;
+    }
+
+    section h2 {
+        font-size: 48px;
         letter-spacing: -2px;
+        margin-bottom: 45px;
+    }
+
+    section p {
+        font-size: 17px;
+    }
+
+    #chi-siamo,
+    .intro,
+    #lavori {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .intro h2 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .service {
+        padding: 35px 25px;
+        min-height: auto;
+    }
+
+    .service h3 {
+        font-size: 22px;
+    }
+
+    #contatti a {
+        font-size: 21px;
+    }
+
+    footer {
+        padding: 25px 20px;
     }
 }

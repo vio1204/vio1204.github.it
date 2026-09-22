@@ -509,3 +509,95 @@ header {
         padding: 25px 20px;
     }
 }
+/* =========================
+   RECENSIONI
+   ========================= */
+
+#recensioni {
+    background: #e7e9df;
+
+    max-width: none;
+
+    padding-left: max(40px, calc((100vw - 1250px) / 2));
+    padding-right: max(40px, calc((100vw - 1250px) / 2));
+}
+
+#recensioni h2 {
+    max-width: 900px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    margin-top: 80px;
+}
+
+.review {
+    background: #f4f1e9;
+
+    padding: 45px 40px;
+
+    border: 1px solid rgba(29, 42, 32, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 360px;
+}
+
+.review p {
+    font-size: 20px;
+    line-height: 1.65;
+
+    margin: 0;
+}
+
+.review span {
+    display: block;
+
+    margin-top: 40px;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    opacity: 0.65;
+}
+
+
+/* RECENSIONI SU TELEFONO */
+
+@media (max-width: 800px) {
+
+    #recensioni {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .reviews {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    .review {
+        min-height: auto;
+        padding: 35px 25px;
+    }
+
+    .review p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #recensioni {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}

@@ -1115,3 +1115,21 @@ footer {
     }
 
 }
+/* SFONDO HERO HOME */
+
+#home {
+    background:
+        linear-gradient(
+            rgba(28, 48, 37, 0.35),
+            rgba(28, 48, 37, 0.45)
+        ),
+        url("foto/copertina.jpg")
+        center / cover no-repeat;
+    
+    color: white;
+}
+
+#home h1,
+#home p {
+    color: white;
+}

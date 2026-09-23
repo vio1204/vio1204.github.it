@@ -1322,26 +1322,63 @@ svg {
 /* RICHIEDI UN PREVENTIVO */
 
 .preventivo-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     margin-top: 35px;
-    color: inherit;
+    padding: 16px 30px;
+    
+    background: #26352d;
+    color: #f3f0e8;
+    
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(26px, 3vw, 38px);
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
     line-height: 1;
+    
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 6px;
-    transition: opacity 0.25s ease;
+    border: 1px solid #26352d;
+    border-radius: 50px;
+    
+    box-shadow: 0 6px 18px rgba(38, 53, 45, 0.16);
+    
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.preventivo-link::after {
+    content: "→";
+    font-size: 22px;
+    transition: transform 0.25s ease;
 }
 
 .preventivo-link:hover {
-    opacity: 0.6;
+    background: #35483d;
+    box-shadow: 0 9px 24px rgba(38, 53, 45, 0.22);
+    transform: translateY(-2px);
+}
+
+.preventivo-link:hover::after {
+    transform: translateX(4px);
+}
+
+.preventivo-link:focus-visible {
+    outline: 3px solid rgba(38, 53, 45, 0.35);
+    outline-offset: 4px;
 }
 
 @media (max-width: 700px) {
+
     .preventivo-link {
-        font-size: 28px;
         margin-top: 28px;
+        padding: 15px 26px;
+        font-size: 22px;
+    }
+
+    .preventivo-link::after {
+        font-size: 20px;
     }
 }

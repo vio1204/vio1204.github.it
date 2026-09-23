@@ -188,7 +188,12 @@ section > p:first-child {
    SIEPEPRONTA
    ========================= */
 
-#siepepronta {
+#siepepronta {#siepepronta p,
+#siepepronta h2,
+#siepepronta strong,
+#siepepronta span {
+    color: #ffffff;
+}
     color: white;
 
     background:
@@ -255,8 +260,25 @@ section > p:first-child {
 
 #recensioni {
     background: #f3f0e8;
+    color: #26352d;
 }
 
+#recensioni h2 {
+    color: #26352d;
+}
+
+#recensioni .review {
+    background: #ffffff;
+    color: #26352d;
+}
+
+#recensioni .review p {
+    color: #26352d;
+}
+
+#recensioni .review span {
+    color: #26352d;
+}
 .reviews {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

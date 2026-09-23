@@ -187,17 +187,11 @@ section > p:first-child {
 /* =========================
    SIEPEPRONTA
    ========================= */
-
 #siepepronta {
     color: white;
-
-    background:
-        linear-gradient(
-            rgba(28, 48, 37, 0.45),
-            rgba(28, 48, 37, 0.68)
-        ),
-        url("foto/siepe pronta.jpg")
-        center / cover no-repeat;
+    background: #26352d;
+}
+-repeat;
 }
 
 #siepepronta p,

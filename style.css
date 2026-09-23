@@ -524,3 +524,299 @@ footer {
         padding: 12px 20px 15px;
     }
 }
+/* =========================
+   NUOVO EQUILIBRIO GENERALE
+   ========================= */
+
+body {
+    text-align: center;
+}
+
+/* =========================
+   TESTATA
+   ========================= */
+
+.site-header {
+    position: relative;
+    z-index: 1000;
+
+    background: #f3f0e8;
+    border-bottom: 1px solid rgba(38, 53, 45, 0.12);
+
+    padding-top: 10px;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3px 20px 8px;
+}
+
+.site-logo {
+    width: 145px;
+    max-width: 55%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   MENU
+   ========================= */
+
+.site-header nav {
+    position: static;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 8px 20px 12px;
+
+    background: transparent;
+    border: 0;
+
+    backdrop-filter: none;
+}
+
+.site-header nav a {
+    color: #26352d;
+}
+
+/* =========================
+   HOME
+   ========================= */
+
+header {
+    align-items: center;
+    text-align: center;
+}
+
+header p:last-child {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   SEZIONI
+   ========================= */
+
+section {
+    text-align: center;
+}
+
+section > p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   CHI SIAMO
+   ========================= */
+
+#chi-siamo {
+    max-width: 100%;
+}
+
+#chi-siamo p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chi-siamo-finale {
+    max-width: 850px;
+    margin: 70px auto 0 !important;
+
+    text-align: center;
+}
+
+/* =========================
+   INTRO
+   ========================= */
+
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.brand-statement {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.brand-statement h2 {
+    margin: 8px 0;
+}
+
+/* =========================
+   SIEPEPRONTA
+   ========================= */
+
+#siepepronta {
+    text-align: center;
+}
+
+.siepe-intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.siepe-highlight {
+    display: flex;
+    justify-content: center;
+    margin: 65px 0;
+}
+
+.siepe-highlight div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+.siepe-highlight span {
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: clamp(42px, 6vw, 78px);
+    line-height: 1;
+    font-weight: 500;
+
+    color: #ffffff;
+}
+
+#siepepronta > p:last-child {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   LAVORI
+   ========================= */
+
+#lavori {
+    background: #e7e1d4;
+    color: #26352d;
+}
+
+#lavori h2,
+#lavori p {
+    color: #26352d;
+}
+
+.lavori-intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   RECENSIONI
+   ========================= */
+
+#recensioni {
+    background: #f3f0e8;
+    color: #26352d;
+}
+
+#recensioni h2,
+#recensioni p,
+#recensioni span {
+    color: #26352d;
+}
+
+.reviews {
+    text-align: left;
+}
+
+/* =========================
+   RISPOSTE ALLE DOMANDE
+   ========================= */
+
+#domande {
+    background: #e7e1d4;
+    color: #26352d;
+}
+
+#domande h2,
+#domande h3,
+#domande p {
+    color: #26352d;
+}
+
+.faq {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.faq-item p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   CONTATTI
+   ========================= */
+
+#contatti {
+    text-align: center;
+}
+
+#contatti p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .site-logo {
+        width: 125px;
+    }
+
+    .site-header nav {
+        gap: 18px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .siepe-highlight div {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .siepe-highlight span {
+        font-size: 48px;
+    }
+
+    .reviews {
+        text-align: left;
+    }
+}

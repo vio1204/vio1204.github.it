@@ -1027,9 +1027,10 @@ footer {
     }
 
     .services-photo img {
-        height: 300px;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
-
 }
 /* COPERTINA PAGINA SERVIZI */
 

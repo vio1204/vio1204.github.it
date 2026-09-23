@@ -997,30 +997,10 @@ footer {
 }
 /* FOTO TRATTORE - SIEPEPRONTA */
 
-.siepe-photo {
-    max-width: 1200px;
-    margin: 80px auto 0;
-    overflow: hidden;
-}
 
-.siepe-photo img {
-    width: 100%;
-    height: 520px;
-    object-fit: cover;
-    display: block;
-}
 
 /* MOBILE */
 
-@media (max-width: 700px) {
-
-    .siepe-photo {
-        margin-top: 60px;
-    }
-
-    .siepe-photo img {
-        height: 360px;
-    }
 
 }
 /* FOTO CAMION - SERVIZI */
@@ -1132,4 +1112,19 @@ footer {
 #home h1,
 #home p {
     color: white;
+}
+/* FOTO TRATTORE RESPONSIVE */
+
+.siepe-photo {
+    width: 100%;
+    max-width: 1000px;
+    margin: 70px auto 0;
+    overflow: hidden;
+}
+
+.siepe-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }

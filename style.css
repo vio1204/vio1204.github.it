@@ -877,12 +877,15 @@ svg {
 
 #siepepronta h2 {
     font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(70px, 10vw, 130px);
+    font-size: clamp(30px, 10vw, 130px);
     font-weight: 500;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
     margin: 20px auto 35px;
 }
-
 #siepepronta .siepe-intro {
     max-width: 700px;
     margin: 0 auto;

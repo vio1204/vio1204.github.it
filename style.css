@@ -963,3 +963,34 @@ footer {
     }
 
 }
+/* GALLERIA LAVORI */
+
+#lavori .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 70px auto 0;
+}
+
+#lavori .gallery img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    #lavori .gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    #lavori .gallery img {
+        height: 360px;
+    }
+
+}

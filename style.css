@@ -482,13 +482,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding: 5px 20px 15px;
+    padding: 0 20px 2px;
 }
 
 .site-logo {
-    width: 190px;
-    max-width: 65%;
+    width: 230px;
+    max-width: 75%;
     height: auto;
     display: block;
 }

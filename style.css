@@ -1319,3 +1319,29 @@ svg {
         margin-top: 28px;
     }
 }
+/* RICHIEDI UN PREVENTIVO */
+
+.preventivo-link {
+    display: inline-block;
+    margin-top: 35px;
+    color: inherit;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(26px, 3vw, 38px);
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 6px;
+    transition: opacity 0.25s ease;
+}
+
+.preventivo-link:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+    .preventivo-link {
+        font-size: 28px;
+        margin-top: 28px;
+    }
+}

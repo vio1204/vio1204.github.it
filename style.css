@@ -904,3 +904,62 @@ footer {
     font-size: 18px;
     line-height: 1.7;
 }
+/* FOTO BOTANICHE NELLA SEZIONE RECENSIONI */
+
+.reviews-layout {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr) 180px;
+    align-items: center;
+    gap: 35px;
+    max-width: 1400px;
+    margin: 70px auto 0;
+}
+
+.review-photo {
+    height: 430px;
+    overflow: hidden;
+}
+
+.review-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.review-photo-left {
+    transform: translateY(-35px);
+}
+
+.review-photo-right {
+    transform: translateY(35px);
+}
+
+.reviews-layout .reviews {
+    margin-top: 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .reviews-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .reviews-layout .reviews {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .review-photo {
+        height: 300px;
+    }
+
+    .review-photo-left,
+    .review-photo-right {
+        transform: none;
+    }
+
+}

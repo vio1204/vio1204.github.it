@@ -422,3 +422,24 @@ footer {
         flex-direction: column;
     }
 }
+.logo-home {
+    width: 210px;
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 28px;
+    object-fit: contain;
+}
+
+.home-label {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+}
+
+@media (max-width: 700px) {
+    .logo-home {
+        width: 160px;
+        margin-bottom: 22px;
+    }
+}

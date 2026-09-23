@@ -833,6 +833,29 @@ footer {
         text-align: left;
     }
 }
+/* CORREZIONE DEFINITIVA MOBILE */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+#siepepronta h2 {
+    font-size: clamp(28px, 9vw, 130px);
+    margin-bottom: 30px;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
+}
+
 #chi-siamo h2 {
     text-align: center;
     margin-left: auto;

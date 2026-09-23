@@ -102,7 +102,7 @@ header {
             rgba(25, 45, 35, 0.35),
             rgba(25, 45, 35, 0.58)
         ),
-        url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2000&q=85")
+        url("foto/copertina.png")
         center / cover no-repeat;
 }
 

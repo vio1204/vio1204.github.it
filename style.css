@@ -188,12 +188,7 @@ section > p:first-child {
    SIEPEPRONTA
    ========================= */
 
-#siepepronta {#siepepronta p,
-#siepepronta h2,
-#siepepronta strong,
-#siepepronta span {
-    color: #ffffff;
-}
+#siepepronta {
     color: white;
 
     background:
@@ -201,10 +196,16 @@ section > p:first-child {
             rgba(28, 48, 37, 0.45),
             rgba(28, 48, 37, 0.68)
         ),
-        url("https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=2000&q=85")
+        url("foto/siepe pronta.jpg")
         center / cover no-repeat;
 }
 
+#siepepronta p,
+#siepepronta h2,
+#siepepronta strong,
+#siepepronta span {
+    color: #ffffff;
+}
 #siepepronta h2 {
     font-size: clamp(65px, 9vw, 130px);
     margin-bottom: 30px;

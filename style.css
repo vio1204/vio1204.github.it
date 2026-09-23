@@ -1159,6 +1159,52 @@ footer {
     background: white;
     color: #26352d;
 }
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.social-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.social-icon svg {
+    width: 23px;
+    height: 23px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+}
+
+.social-icon:last-child svg {
+    fill: currentColor;
+    stroke: none;
+}
+
+.social-icon:hover {
+    background: white;
+    color: #26352d;
+    transform: translateY(-2px);
+}
 /* STACCO VISIVO SIEPEPRONTA */
 
 #siepepronta {

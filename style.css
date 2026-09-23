@@ -201,8 +201,10 @@ section > p:first-child {
     color: #ffffff;
 }
 #siepepronta h2 {
-    font-size: clamp(65px, 9vw, 130px);
+    font-size: clamp(42px, 9vw, 130px);
     margin-bottom: 30px;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .siepe-intro {

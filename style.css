@@ -847,3 +847,60 @@ footer {
     font-weight: 400;
     line-height: 1.7;
 }
+/* =========================
+   SIEPEPRONTA
+   ========================= */
+
+#siepepronta {
+    text-align: center;
+}
+
+#siepepronta h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(70px, 10vw, 130px);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    margin: 20px auto 35px;
+}
+
+#siepepronta .siepe-intro {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+#siepepronta .siepe-highlight {
+    display: flex;
+    justify-content: center;
+    margin: 70px auto;
+}
+
+#siepepronta .siepe-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#siepepronta .siepe-highlight span {
+    display: block;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 500;
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+#siepepronta > p:last-child {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}

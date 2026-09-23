@@ -1156,3 +1156,8 @@ footer {
     background: white;
     color: #26352d;
 }
+/* STACCO VISIVO SIEPEPRONTA */
+
+#siepepronta {
+    border-top: 3px solid #e7e1d4;
+}

@@ -998,19 +998,22 @@ footer {
 
 }
 /* FOTO CAMION - SERVIZI */
+/* FOTO CAMION - RESPONSIVE */
 
 .services-photo {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto 80px;
     overflow: hidden;
 }
 
 .services-photo img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
     display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
+
 
 /* MOBILE */
 

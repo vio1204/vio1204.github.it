@@ -1383,3 +1383,59 @@ svg {
 .servizi-link {
     margin-top: 14px;
 }
+/* CTA PAGINA SERVIZI */
+
+.services-end {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 120px 8vw;
+    background: #f3f0e8;
+    color: #26352d;
+    text-align: center;
+}
+
+.services-end h2,
+.services-end p {
+    color: #26352d;
+}
+
+.services-end h2 {
+    margin-bottom: 30px;
+}
+
+.services-end p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.services-end .preventivo-link {
+    background: #26352d;
+    color: #f3f0e8;
+    border: 1px solid #26352d;
+}
+
+.services-end .preventivo-link:hover {
+    background: #35483d;
+    color: #f3f0e8;
+}
+
+@media (max-width: 700px) {
+
+    .services-end {
+        padding: 90px 25px;
+    }
+
+    .services-end .preventivo-link {
+        font-size: 22px;
+    }
+
+}

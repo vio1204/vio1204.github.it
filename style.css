@@ -1253,3 +1253,69 @@ svg {
         transform: scale(1.30);
     }
 }
+/* TENDINA CHI SIAMO */
+
+.chi-siamo-details {
+    max-width: 850px;
+    margin: 35px auto 0;
+    text-align: left;
+}
+
+.chi-siamo-details summary {
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #26352d;
+    padding: 16px 22px;
+    border: 1px solid rgba(38, 53, 45, 0.25);
+    border-radius: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.chi-siamo-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.chi-siamo-details summary::after {
+    content: "⌄";
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.chi-siamo-details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.chi-siamo-details-content {
+    margin-top: 35px;
+}
+
+.chi-siamo-details-content p {
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+
+    .chi-siamo-details {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .chi-siamo-details summary {
+        width: auto;
+        max-width: 100%;
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+
+    .chi-siamo-details-content {
+        margin-top: 28px;
+    }
+}
